@@ -1,0 +1,132 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Builder Match</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<style>
+  /* Layout: one narrow reading column. Title, subheading, offer as H2, two paragraphs, three bullets. */
+  :root {
+    --bg: #f5f6f8;
+    --fg: #15181e;
+    --muted: #4a515c;
+    --accent: #2457d6;
+    --rule: #dde0e6;
+    --font: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151a;
+      --fg: #eceef2;
+      --muted: #a4abb7;
+      --accent: #7ea3ff;
+      --rule: #2a2f38;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12151a;
+    --fg: #eceef2;
+    --muted: #a4abb7;
+    --accent: #7ea3ff;
+    --rule: #2a2f38;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    padding-block: clamp(2.5rem, 8vw, 5.5rem);
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    max-width: 41rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 0;
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 7vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .sub {
+    margin: -0.5rem 0 0.5rem;
+    font-size: clamp(1.15rem, 3vw, 1.35rem);
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--muted);
+    text-wrap: balance;
+  }
+
+  h2 {
+    margin: 0;
+    padding-block: 0.5rem;
+    font-size: clamp(1.5rem, 4.4vw, 2rem);
+    font-weight: 600;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p { margin: 0; text-wrap: pretty; }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border-top: 1px solid var(--rule);
+    padding-top: 1.5rem;
+  }
+  li {
+    position: relative;
+    padding-left: 1.5rem;
+    min-width: 0;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0.15rem;
+    top: 0.72em;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  li strong { font-weight: 600; }
+</style>
+
+<main>
+  <h1>Builder Match</h1>
+  <p class="sub">Scout the best solo builders on X and offer them a shot at a 10X+ outcome at a speedrun company.</p>
+
+  <h2>"Your work stands out. A speedrun founder is building something where you'd matter from day one. Want an intro?"</h2>
+
+  <p>The best builders work alone, in public, and no company with momentum has found them yet. Their posts give them away: they ship fast, think clearly, show taste, and improve every week. Some build near speedrun, near other venture-backed companies, or inside early startups of their own, and left alone they risk a sub-scale outcome or a competitor to the network.</p>
+
+  <p>An agent reads public build-in-public posts, scores the standouts, and matches each with a speedrun founder, or someone considering founding, as a founding engineer, co-builder, or contributor. Intros are double opt-in. Speedrun companies get exceptional early builders, builders get a funded team and network behind a 10X+ shot, and those who would rather found are pointed to the fellowship.</p>
+
+  <ul>
+    <li><strong>Scout:</strong> score 1,000 recent build-in-public posts on shipping pace, clarity, taste, and improvement, and keep the top 3%.</li>
+    <li><strong>Match:</strong> a speedrun partner pairs each builder with the best-fit founder and picks the offer: founding engineer, contributor, or fellowship.</li>
+    <li><strong>Send and measure:</strong> DM from a real speedrun account, introduce only after both say yes, and track double-yes rate, calls, and joins.</li>
+  </ul>
+</main>
+
+</body></html>
